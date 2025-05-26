@@ -11,6 +11,11 @@ Resonating Souls is a front-end focused platform that enables users to:
 - (Future) Connect with others who share similar interests
 
 ## Features
+-unique username & profile 
+-safe and secure
+-genuine connections 
+-intelligent matching algorithm
+-bringing souls together 
 
 ### Landing Page
 - Visually attractive design with gradient background
