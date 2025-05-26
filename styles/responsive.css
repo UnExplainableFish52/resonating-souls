@@ -1,0 +1,163 @@
+
+/* Responsive design */
+@media (min-width: 640px) {
+    .action-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .btn {
+        min-width: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        padding: 0 2rem;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        width: 80%;
+        max-width: 500px;
+    }
+    
+    .orb-1 {
+        top: 80px;
+        left: 80px;
+    }
+    
+    .orb-2 {
+        top: 160px;
+        right: 128px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        padding: 0 3rem;
+    }
+    
+    .footer-content {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 639px) {
+    .main-logo {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.25rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .btn {
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 2% auto;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 0 1rem;
+    }
+    
+    .main-logo {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .tagline {
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .description {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+    
+    .action-buttons {
+        margin-bottom: 2rem;
+    }
+    
+    .btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .modal-content {
+        margin: 1% auto;
+    }
+    
+    .modal-header {
+        padding: 1rem;
+    }
+    
+    .social-buttons,
+    .auth-form {
+        padding: 0 1rem 1rem;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .main-logo,
+    .tagline,
+    .description {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 100vh;
+        padding: 1rem;
+    }
+    
+    .main-logo {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .description {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+    }
+    
+    .action-buttons {
+        margin-bottom: 1rem;
+    }
+    
+    .indicators {
+        display: none;
+    }
+}

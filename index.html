@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonating Souls - Find Souls Alike</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Animated background elements -->
+        <div class="background-effects">
+            <div class="bg-orb orb-1"></div>
+            <div class="bg-orb orb-2"></div>
+            <div class="bg-orb orb-3"></div>
+            <div class="bg-orb orb-4"></div>
+            <div class="parallax-stars"></div>
+        </div>
+
+        <!-- Main content -->
+        <main class="hero-section">
+            <div class="hero-content">
+                <!-- Animated gradient logo -->
+                <h1 class="main-logo">Resonating Souls</h1>
+                
+                <!-- Enhanced tagline -->
+                <p class="tagline">Where Souls Connect Beyond Words</p>
+                
+                <!-- Glowing description -->
+                <p class="description">
+                    Discover authentic connections with like-minded souls through deep, meaningful conversations and shared experiences that transcend the ordinary.
+                </p>
+
+                <!-- Action buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="signUpBtn">
+                        ✨ Join Our Community
+                    </button>
+                    <button class="btn btn-secondary" id="signInBtn">
+                        🔑 Welcome Back
+                    </button>
+                </div>
+
+                <!-- Animated indicators -->
+                <div class="indicators">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator main"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Resonating Souls</h3>
+                    <p>Find Souls Alike</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TheIdealDev52. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>✨ Join Our Community</h2>
+                <span class="close" id="closeSignUp">&times;</span>
+            </div>
+            
+            <!-- Social login buttons -->
+            <div class="social-buttons">
+                <button class="social-btn google-btn">
+                    <span class="social-icon">G</span>
+                    Continue with Google
+                </button>
+                <button class="social-btn facebook-btn">
+                    <span class="social-icon">f</span>
+                    Continue with Facebook
+                </button>
+                <button class="social-btn github-btn">
+                    <span class="social-icon">⚡</span>
+                    Continue with GitHub
+                </button>
+            </div>
+
+            <div class="divider">or continue with email</div>
+
+            <form id="signUpForm" class="auth-form">
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" class="country-select" required>
+                        <!-- Countries will be populated by JavaScript -->
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🔑 Welcome Back</h2>
+                <span class="close" id="closeSignIn">&times;</span>
+            </div>
+            
+            <!-- Social login buttons -->
+            <div class="social-buttons">
+                <button class="social-btn google-btn">
+                    <span class="social-icon">G</span>
+                    Continue with Google
+                </button>
+                <button class="social-btn facebook-btn">
+                    <span class="social-icon">f</span>
+                    Continue with Facebook
+                </button>
+                <button class="social-btn github-btn">
+                    <span class="social-icon">⚡</span>
+                    Continue with GitHub
+                </button>
+            </div>
+
+            <div class="divider">or continue with email</div>
+
+            <form id="signInForm" class="auth-form">
+                <div class="input-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Sign In</button>
+                
+                <div class="forgot-password">
+                    <a href="#" class="forgot-link">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/countries.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

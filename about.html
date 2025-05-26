@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Resonating Souls</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">Resonating Souls</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active">About</a>
+                    <a href="privacy.html">Privacy</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About content -->
+        <main class="about-page">
+            <div class="about-hero">
+                <h1 class="page-title">About Resonating Souls</h1>
+                <p class="page-subtitle">Connecting hearts across the digital divide</p>
+            </div>
+
+            <div class="about-content">
+                <section class="about-section">
+                    <h2>Our Mission</h2>
+                    <p>At Resonating Souls, we believe that genuine connections transcend geographical boundaries and surface-level interactions. Our platform is designed to bring together like-minded individuals who seek meaningful relationships built on shared values, interests, and authentic communication.</p>
+                </section>
+
+                <section class="about-section">
+                    <h2>What Makes Us Different</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3>🌟 Soul-Deep Connections</h3>
+                            <p>We focus on personality compatibility and shared values rather than superficial attributes.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>🔒 Safe Environment</h3>
+                            <p>Our community guidelines and moderation ensure a respectful space for authentic interactions.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>🌍 Global Community</h3>
+                            <p>Connect with souls from around the world and discover diverse perspectives and cultures.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>💬 Meaningful Conversations</h3>
+                            <p>Our platform encourages deep, thoughtful discussions that go beyond small talk.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-section">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2024, Resonating Souls was born from the vision of creating a digital space where authenticity thrives and genuine connections flourish. We recognized that in our fast-paced digital world, people crave deeper, more meaningful relationships.</p>
+                    <p>Our team of passionate developers, psychologists, and community builders work tirelessly to create features that promote understanding, empathy, and genuine human connection.</p>
+                </section>
+
+                <section class="about-section">
+                    <h2>Join Our Community</h2>
+                    <p>Whether you're looking for friendship, mentorship, or romantic connections, Resonating Souls provides the tools and environment to help you find your tribe. Join thousands of users who have already discovered the joy of authentic connections.</p>
+                    <div class="cta-section">
+                        <a href="index.html" class="cta-button">Start Your Journey</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Resonating Souls</h3>
+                    <p>Connecting hearts worldwide</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TheIdealDev52. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <style>
+        .navbar {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #f97316, #ec4899);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #f97316;
+        }
+
+        .about-page {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+
+        .about-hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(249, 115, 22, 0.1));
+        }
+
+        .page-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            background: linear-gradient(45deg, #f97316, #ec4899, #8b5cf6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .page-subtitle {
+            font-size: 1.5rem;
+            color: #a5f3fc;
+            font-style: italic;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem 4rem;
+        }
+
+        .about-section {
+            margin-bottom: 4rem;
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            color: #f97316;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .about-section p {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: #e2e8f0;
+            margin-bottom: 1.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(249, 115, 22, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #f97316;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            color: #cbd5e1;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #f97316, #ec4899);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
